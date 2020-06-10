@@ -1,30 +1,29 @@
-# QA test
+# QA test application
 
-Welcome to our QA test.
+Welcome to our QA test application. 
 
-Here are some hints for people not familiar with PHP, Laravel, Databases and package management.
+Your task is to setup this application so you can test it.
 
-/!\ The packages have been added to the repository for your convenience.
-    We have also added an `.env` file and, exceptionally, the Laravel encryption key as well.
+The packages have been added to the repository for your convenience. We have also added an `.env` file and exceptionally, the Laravel encryption key as well.
 
-To begin, start a database server. We recommend a docker container.
-Then, create a database following the configuration found the `.env` file.
+## Instructions
+1. Install PHP 7
+2. Create PostgreSQL database (Docker container is preferred) following the configuration found the `.env` file. By default, for Postgres, it looks like this:
 
-By default, for Postgres, it looks like this:
 ```
 create database forge;
 create user forge with password 'forge';
 grant all privileges on database forge to forge;
 ```
 
-Install the basic tables and data with:
-```php artisan migrate:refresh --seed```
+If your database has different username and password, update the `DB_USERNAME` and `DB_PASSWORD` of the `.env` file accordingly.
 
-Now, start the embedded server with `php artisan serve`. At this point your app is running and you can open it in your web browser.
-
-You can also try to run the test suite with `./vendor/phpunit/phpunit/phpunit`.
+3. Install the basic tables and data with `php artisan migrate:refresh --seed`
+4. Start the server in cmd `php artisan serve` and access the application from your favorite browser at http://localhost:8000
+5. Update the `.env.testing` DB variables if necessary, and run test suite in cmd: `./vendor/phpunit/phpunit/phpunit`
 
 You'll get something like:
+
 ```▶ ./vendor/phpunit/phpunit/phpunit
    PHPUnit 6.5.2 by Sebastian Bergmann and contributors.
    
@@ -34,6 +33,6 @@ You'll get something like:
    
    OK (10 tests, 18 assertions)
 ```
-Please note that you may need to install PHP, Docker and Postgres clients for all this.
 
-For any question, please contact jeremy.lamit@zenrooms.com
+
+For any questions, please contact karlo.abapo@zenrooms.com
