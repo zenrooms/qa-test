@@ -1,6 +1,8 @@
 # QA test application
 
-Welcome to our QA test application. Your task is to setup this application.
+Welcome to our QA test application. 
+
+Your task is to setup this application so you can test it.
 
 The packages have been added to the repository for your convenience. We have also added an `.env` file and exceptionally, the Laravel encryption key as well.
 
@@ -33,4 +35,4 @@ You'll get something like:
 ```
 
 
-For any question, please contact karlo.abapo@zenrooms.com
+For any questions, please contact karlo.abapo@zenrooms.com
