@@ -18,6 +18,8 @@ grant all privileges on database forge to forge;
 
 If your database has different username and password, update the `DB_USERNAME` and `DB_PASSWORD` of the `.env` file accordingly.
 
+If you are having issues on Windows OS, please add PostgreSQL's bin folder to environment variable's path repo, and enable pgsql extension on `php.ini` file
+
 3. Install the basic tables and data with `php artisan migrate:refresh --seed`
 4. Start the server in cmd `php artisan serve` and access the application from your favorite browser at http://localhost:8000
 5. Update the `.env.testing` DB variables if necessary, and run test suite in cmd: `./vendor/phpunit/phpunit/phpunit`
