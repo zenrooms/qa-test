@@ -19,7 +19,7 @@
         "jsdom": "^11.5.1",
         "jsdom-global": "^3.0.2",
         "laravel-mix": "^1.0",
-        "lodash": "^4.17.4",
+        "lodash": "^4.17.19",
         "mocha": "^4.1.0",
         "mocha-webpack": "^1.0.1",
         "moxios": "^0.4.0",
