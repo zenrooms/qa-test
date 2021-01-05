@@ -11,7 +11,7 @@
         "test-js": "mocha-webpack --webpack-config=node_modules/laravel-mix/setup/webpack.config.js --require tests/Vue/setup.js tests/Vue/**/*.spec.js"
     },
     "devDependencies": {
-        "axios": "^0.17",
+        "axios": "^0.21",
         "bootstrap-sass": "^3.3.7",
         "cross-env": "^5.1",
         "expect": "^22.0.5",
